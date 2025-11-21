@@ -1,0 +1,13 @@
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.csproj.AssemblyReference.cache
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.AssemblyInfoInputs.cache
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.AssemblyInfo.cs
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.csproj.CoreCompileInputs.cache
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.sourcelink.json
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/bin/Debug/net9.0/Project.Common.deps.json
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/bin/Debug/net9.0/Project.Common.dll
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/bin/Debug/net9.0/Project.Common.pdb
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.dll
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/refint/Project.Common.dll
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/Project.Common.pdb
+/Users/mariamasenko/University/7_semestr/backend-study/Project.Common/obj/Debug/net9.0/ref/Project.Common.dll
