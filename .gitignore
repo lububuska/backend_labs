@@ -6,3 +6,5 @@ Models/obj
 BackendProject/obj
 BackendProject/bin
 .idea/
+Project.Common
+Project.Messages

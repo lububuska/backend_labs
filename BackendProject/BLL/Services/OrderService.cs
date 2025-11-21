@@ -57,7 +57,7 @@ public class OrderService(UnitOfWork unitOfWork, IOrderRepository orderRepositor
             
             var orderItemLookup = insertedOrderItems.ToLookup(x => x.OrderId);
 
-            var messages = ordersToInsert.Select(oti => new OrderCreatedMessage
+            var messages = insertedOrders.Select(oti => new OrderCreatedMessage
             {
                 CustomerId = oti.CustomerId,
                 DeliveryAddress = oti.DeliveryAddress,
