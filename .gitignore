@@ -8,3 +8,5 @@ BackendProject/bin
 .idea/
 Project.Common
 Project.Messages
+Consumer/obj
+Consumer/bin

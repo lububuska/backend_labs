@@ -18,13 +18,7 @@ public class MigratorRunner(string connectionString)
     private IServiceProvider CreateServices()
     {
         Console.WriteLine(typeof(MigratorRunner).Assembly.FullName);
-        
-        // Зависимости
-        // Хотим fluentMigrator с постгресом
-        // и чтобы искал миграции в текущем проекте.
-        // Также добавляем консольное логирование и
-        // собственную реализацию интерфейса IVersionTableMetaData 
-        // (которая хранит накаченные миграции) 
+         
         return new ServiceCollection() // создаём новый контейнер зависимостей
             .AddFluentMigratorCore()
             .ConfigureRunner(rb => rb
