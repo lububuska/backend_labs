@@ -4,22 +4,20 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoFixture" Version="5.0.0-preview0012" />
         <PackageReference Include="Dapper" Version="2.1.66" />
         <PackageReference Include="FluentValidation" Version="12.0.0" />
         <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.0" />
         <PackageReference Include="Microsoft.OpenApi" Version="1.6.25" />
         <PackageReference Include="RabbitMQ.Client" Version="7.2.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
     </ItemGroup>
 
-
-
     <ItemGroup>
-        <ProjectReference Include="..\Consumer\Consumer.csproj" />
         <ProjectReference Include="..\Migrations\Migrations.csproj" />
         <ProjectReference Include="..\Models\Models.csproj" />
         <ProjectReference Include="..\Project.Common\Project.Common.csproj" />

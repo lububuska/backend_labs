@@ -8,6 +8,8 @@ using BackendProject.Config;
 using Dapper;
 using FluentValidation;
 using Migrations;
+using BackendProject.Jobs;
+using Migrations;
 
 
 var builder = WebApplication.CreateBuilder(args); 
@@ -34,9 +36,9 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower;
 });
 
-
+builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddHostedService<OrderGenerator>();
 
 var app = builder.Build();
 
