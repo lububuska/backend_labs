@@ -10,7 +10,7 @@ builder.Logging.AddDebug();
 builder.Logging.SetMinimumLevel(LogLevel.Information);
 
 builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection(nameof(RabbitMqSettings)));
-builder.Services.AddHostedService<OmsOrderCreatedConsumer>();
+builder.Services.AddHostedService<BatchOmsOrderCreatedConsumer>();
 builder.Services.AddHttpClient<OmsClient>(c => c.BaseAddress = new Uri(builder.Configuration["HttpClient:Oms:BaseAddress"]));
 
 var app = builder.Build();

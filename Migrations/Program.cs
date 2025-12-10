@@ -20,10 +20,18 @@ public static class Program
         var config = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile($"appsettings.{environmentName}.json")
+            .AddEnvironmentVariables()
             .Build();
 
         // Получаем строку подключения из конфига `appsettings.{Environment}.json`
         var connectionString = config["DbSettings:MigrationConnectionString"];
+        Console.WriteLine("CONNECTION STRING:" + connectionString);
+        
+        if (string.IsNullOrEmpty(connectionString))
+        {
+            Console.WriteLine("Ошибка: Строка подключения 'DbSettings:MigrationConnectionString' не найдена в конфигурации.");
+            return;
+        }
         var migrationRunner = new MigratorRunner(connectionString);
         
         // Мигрируемся

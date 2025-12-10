@@ -7,4 +7,6 @@ public class RabbitMqSettings
     public string OrderCreatedQueue { get; set; }
     public string UserName { get; set; } = "guest";
     public string Password { get; set; } = "guest";
+    public ushort BatchSize { get; set; }
+    public int BatchTimeoutSeconds { get; set;  }
 }
